@@ -1,0 +1,12 @@
+[
+  {
+    "question": "Who wrote The Great Gatsby?",
+    "context": "The Great Gatsby is a novel by F. Scott Fitzgerald published in 1925.",
+    "expected": "F. Scott Fitzgerald"
+  },
+  {
+    "question": "When was 1984 published?",
+    "context": "1984 is a dystopian novel by George Orwell published in 1949.",
+    "expected": "1949"
+  }
+]
