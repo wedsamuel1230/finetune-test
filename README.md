@@ -25,9 +25,28 @@ python demo.py                    # Run all component demos
 python demo.py --component data   # Test data processing only
 ```
 
-### 3. Google Colab Training (Recommended)
+### 3. Google Colab Training (Recommended) 🚀
 
-Open `notebooks/t5_book_qa_training.ipynb` in Google Colab and follow the step-by-step training process.
+**Enhanced for Google Colab with full automation:**
+
+1. **Open the notebook**: [`notebooks/t5_book_qa_training.ipynb`](notebooks/t5_book_qa_training.ipynb) in Google Colab
+2. **Enable GPU**: Runtime → Change runtime type → Hardware accelerator → GPU (T4)
+3. **Run all cells**: The notebook now automatically:
+   - Detects Colab environment
+   - Installs dependencies
+   - Clones repository
+   - Mounts Google Drive for model persistence
+   - Optimizes settings for T4 GPU
+   - Saves trained model to Google Drive
+
+**New Colab Features:**
+- ✅ **Auto-detection**: Automatically configures for Colab vs local environment
+- ✅ **Google Drive integration**: Models persist across sessions
+- ✅ **Memory optimization**: T4 GPU-optimized batch sizes and memory management
+- ✅ **File upload support**: Upload custom datasets directly in the notebook
+- ✅ **Model download**: Easy download of trained models
+- ✅ **Error handling**: Graceful fallbacks for dataset loading issues
+- ✅ **Runtime restart handling**: Robust session management
 
 ### 4. Local Training
 
