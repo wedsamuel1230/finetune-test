@@ -18,11 +18,31 @@ This repository contains a complete pipeline for fine-tuning T5-small model on t
 pip install -r requirements.txt
 ```
 
-### 2. Google Colab Usage
+### 2. Quick Demo (No GPU Required)
 
-Open `t5_book_qa_training.ipynb` in Google Colab and follow the step-by-step training process.
+```bash
+python demo.py                    # Run all component demos
+python demo.py --component data   # Test data processing only
+```
 
-### 3. Local Training
+### 3. Google Colab Training (Recommended)
+
+Open `notebooks/t5_book_qa_training.ipynb` in Google Colab and follow the step-by-step training process.
+
+### 4. Local Training
+
+```bash
+# Quick setup validation
+python setup_and_test.py
+
+# Train with subset first (recommended)
+python train.py --subset_first
+
+# Full training with custom parameters
+python train.py --num_epochs 5 --batch_size 4 --learning_rate 1e-4
+```
+
+### 5. Quick API Usage
 
 ```python
 from src.trainer import T5BookQATrainer
